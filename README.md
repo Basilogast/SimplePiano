@@ -1,13 +1,13 @@
-#ToDo Project
+#cToDo Project
 A simple Piano App using HTML5, CSS3, and vanilla JS to create.
 
-#Deployment
+## Deployment
 At the website https://basilogast.github.io/SimplePiano/
 
-#Usage
+## Usage
 Simple GUI on the website
 
-#Contributing
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
