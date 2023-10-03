@@ -1,0 +1,197 @@
+<!--Font Poppins-->
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:wght@500&display=swap');
+*{
+margin: 0;
+padding: 0;
+}
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Poppins';
+background-color: rgb(230,230,230);
+padding-top: 30px;
+}
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 20px;
+    background-color: #141414;
+    color: white;
+    border-radius: 30px;
+}
+.control
+{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+font-size: 20px;
+color: rgb(150,150,150);
+}
+    .title
+    {
+    width: 200px;
+    text-align: center;
+    font-weight: bold;
+    }
+    .volume-slider
+    {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+    }
+        .volume-slider input
+        {
+        accent-color: #fff;
+        cursor: pointer;
+        }
+    .key-checkbox
+    {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    }
+        .key-checkbox input
+        {
+        appearance: none;
+        height: 27px;
+        width: 60px;
+        background: rgb(120,120,120);
+        border-radius: 13.5px;
+        margin-left: 15px;
+        position: relative;
+        cursor: pointer;
+        }
+            .key-checkbox input::before
+            {
+            content: "";
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background: rgb(200,200,200);
+            position: absolute;
+            margin-top: 2px;
+            margin-left: 5px;
+            transition: all 0.3s ease;
+            }
+                .key-checkbox input:checked::before {
+            margin-left: 33px;
+            background: rgb(250,250,250);
+            }
+.piano-keys
+{
+display: flex;
+justify-content: center;
+align-items: top;
+padding-left: 0px;
+list-style: none;
+margin-top: 40px;
+}
+.piano-keys .key
+{
+cursor: pointer;
+text-transform: uppercase;
+}
+    .white
+    {
+    width: 70px;
+    background: linear-gradient(#fff, #eee);
+    padding-top: 200px;
+    text-align: center;
+    color: black;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 0 0px 0 0;
+    box-shadow: 0px 0px 0px black;
+    }
+        .white:active
+        {
+        box-shadow: -3px -2px 20px rgba(0,0,0,0.2) inset;
+        background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+        }
+    .black
+    {
+    align: top;
+    background: linear-gradient(#333, #000);
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    height: 60px;
+    width: 70px;
+    z-index: 2;
+    border-radius: 8px;
+    margin: 0px -35px 0px -35px;
+    }
+        .black:active
+        {
+        background: linear-gradient(#000,#333);
+        }
+@media (max-width: 800px) and (min-width: 600px)
+{
+    .white
+    {
+    width: 40px;
+    }
+    .black
+    {
+    width: 40px;
+    margin: 0px -20px 0px -20px;
+    }
+    .wrapper
+    {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .control
+    {
+    font-size: 15px;
+    flex-direction: column;
+    }
+    .title
+    {
+    width: 100px;
+    }
+}
+@media (max-width: 599px)
+{
+    .white
+    {
+    width: 40px;
+    }
+    .black
+    {
+    width: 40px;
+    margin: 0px -20px 0px -20px;
+    }
+    .wrapper
+    {
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+    .control
+    {
+    font-size: 15px;
+    flex-direction: column;
+    }
+    .title
+    {
+    width: 100px;
+    }
+    .piano-keys .key:nth-child(n+13)
+    {
+    display:none;
+    }
+}
+.piano-keys .key.hide span {
+  display: none !important;
+}
