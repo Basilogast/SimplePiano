@@ -1,4 +1,4 @@
-#cToDo Project
+# ToDo Project
 A simple Piano App using HTML5, CSS3, and vanilla JS to create.
 
 ## Deployment
